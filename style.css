@@ -1,0 +1,414 @@
+@font-face {
+  font-family: "Varela Round", sans-serif;
+  src: url();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Varela Round", sans-serif;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+.hero {
+  /* width: 100vw; */
+  min-height: 95vh;
+  background-image: url(Images/Green-bg.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+  overflow: hidden;
+  color: white;
+  padding-bottom: 150px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 453px;
+  height: 593px;
+  background-image: url(Images/hero-bg-leave.svg);
+  background-size: cover;
+  z-index: -1;
+}
+
+nav {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px 0px 25px 25px;
+  padding-left: 85px;
+  padding-right: 85px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu .active {
+  position: relative;
+}
+
+.menu .active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 150%;
+  background-image: url(Images/active-underline.svg);
+  background-size: cover;
+  left: -10px;
+  top: 20px;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+.leftside {
+  font-size: 50px;
+  margin-bottom: 14px;
+}
+.right-img {
+  height: 60vh;
+  max-width: 700px;
+}
+
+.menu ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 35px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+  font-family: "Varela Round", sans-serif;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero-content {
+  margin-top: 10%;
+  max-width: 600px;
+  padding-left: 7%;
+}
+
+.content h1 {
+  color: white;
+  font-family: "Varela Round", sans-serif;
+}
+.content p {
+  margin: 20px 0 30px;
+  color: white;
+}
+
+.fresh-product {
+  font-family: "Varela Round", sans-serif;
+  padding-left: 7%;
+  margin-top: 10%;
+  font-size: 32px;
+}
+
+.cooking {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  padding-left: 7%;
+  margin-top: 10px;
+}
+.hero-section {
+  position: relative;
+  padding: 60px 85px;
+  /* z-index: 0; */
+}
+.row {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.section-content {
+  margin-top: -50px;
+}
+.section-img {
+  z-index: -1;
+}
+.hero-section .section-heading h2 {
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+.hero-section .section-heading p {
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+.features {
+  display: flex;
+}
+.features .feature-item {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.feature-item .vegan-img {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 3rem;
+}
+.bg-leave {
+  position: absolute;
+  top: -80px;
+  right: -33px;
+  z-index: -1;
+}
+
+.brown-section {
+  position: relative;
+  top: -250px;
+  background-color: #d8baa0;
+  width: 1441px;
+  height: 327px;
+  z-index: 1;
+  padding-left: 218px;
+  padding-right: 266px;
+  display: flex;
+  align-items: center;
+}
+
+.brown-section::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -33px;
+  width: 258px;
+  height: 308px;
+  background-image: url(Images/brown-leave.svg);
+  background-size: cover;
+  z-index: -1;
+}
+.frozen-food {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 108px;
+  margin-bottom: 22px;
+}
+.frozen-food div {
+  width: 234px;
+  height: 37px;
+  border-radius: 14px;
+  border: 1px solid #fff;
+  background: #8c5036;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+.right-content {
+  color: #000;
+  text-align: center;
+  font-family: Varela Round;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px; /* 112.5% */
+  position: relative;
+}
+
+.shredded-coconut {
+  background-color: #0c7236;
+  width: 1440px;
+  height: 3189px;
+}
+.shredded-coconut p {
+  color: #fff;
+  text-align: center;
+  font-family: "Varela Round";
+  font-size: 20px;
+  margin-top: -250px;
+  padding-top: 87px;
+}
+.shredded-group {
+  justify-content: center;
+  margin-top: 76px;
+  background-size: cover;
+  padding-left: 18%;
+}
+.wheat-img {
+  margin-top: -19%;
+}
+.shredded-coconut h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Varela Round";
+}
+.shredded-coconut .source .finest-quality {
+  color: #fff;
+  text-align: center;
+  font-family: "Varela Round";
+  padding-top: 20%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  margin-top: 146px;
+}
+.cream-bg {
+  width: 1440px;
+  height: 829px;
+  border-radius: 60px;
+  background: #fff3ec;
+  margin-top: 111px;
+}
+.shredded-coconut .cream-bg .recipe {
+  justify-content: center;
+  text-align: center;
+  font-family: "Varela Round";
+  /* padding-right: 30px; */
+  font-size: 32px;
+  padding-top: 95px;
+  padding-bottom: 41px;
+}
+.shredded-coconut .cream-bg .dig {
+  color: #0c7236;
+  justify-content: center;
+  text-align: center;
+  /* padding-right: 20px; */
+}
+.cream-bg .dig .garnish {
+  text-decoration: underline;
+}
+.recipes .row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 81px;
+  gap: 153px;
+}
+.recipes .row h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.recipes .row .column1 {
+  border-radius: 66px;
+  border: 3px solid #ecc9b5;
+  background-color: white;
+}
+.recipes .row .column2 {
+  border-radius: 66px;
+  border: 3px solid #ecc9b5;
+  background-color: white;
+}
+.recipes .row .column3 {
+  border-radius: 66px;
+  border: 3px solid #ecc9b5;
+  background-color: white;
+}
+.tree h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 200;
+  margin-top: 156px;
+}
+.tree .follow {
+  display: flex;
+  gap: 170px;
+  padding-left: 222px;
+}
+.tree .follow .green-tree {
+  margin-top: -28px;
+}
+.tree .follow .follow-img {
+  margin-top: 150px;
+  /* padding-left: 100px; */
+}
+
+.accordian {
+  width: 1440px;
+  height: 800px;
+  background-color: white;
+}
+
+.accordian h2 {
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Varela Round";
+  font-size: 30px;
+  font-weight: 200;
+}
+.questions {
+  width: 600px;
+  height: 80px;
+  border-radius: 16px;
+  background: rgba(33, 153, 83, 0.2);
+  border: none;
+  text-align: center;
+  font-family: "Varela Round";
+  font-size: 20px;
+  margin-left: 403px;
+  margin-top: 62px;
+  gap: 13px;
+  padding-left: 42px;
+  padding-right: 140px;
+  margin-bottom: -30px;
+}
+
+/* .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+} */
+
+.footer {
+  width: 1440px;
+  height: 458px;
+  border-radius: 0px 0px 48px 48px;
+  background: #fff3ec;
+  padding-top: 144px;
+  padding-left: 124px;
+}
+.footer p {
+  margin-top: -34px;
+  color: #000;
+  text-align: left;
+}
+
